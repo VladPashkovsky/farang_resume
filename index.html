@@ -3,80 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <title>Saadee kap</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="FARANG_MAIN.jpg" width="350" alt="Farang" />
-        </td>
-        <td>
-          <h1>Farang from Thailand</h1>
-          <p>
-            <em>I`m just a farang who loves <strong>Thailand</strong></em>
-          </p>
-          <p>I like drinking beer when i speand time on the beach</p>
-          <p>In 8 a.m. i`m already drunk</p>
-        </td>
-      </tr>
-    </table>
+    <div class="container">
+      <div class="info">
+        <img src="FARANG_MAIN.jpg" alt="Farang" class="farang" />
+        <div class="info-text">
+        <h1>Farang from Thailand</h1>
+        <p>I`m just a farang who loves <strong>Thailand</strong></p>
+        <p>I like drinking beer when i speand time on the beach</p>
+        <p>In 8 a.m. i`m already drunk</p>
 
-    <hr />
-    <h2>Fuck the social networks. I use only pigeon mail!</h2>
-    <h2>But if you need to catch me fast, you can type me in email:</h2>
-    <ul type="square">
-      <li>
+        <h3>Fuck the social networks. I use only pigeon mail!</h3>
+        <h3>But if you need to catch me fast, you can type me in email:</h3>
+
         <a href="zukerfuck@gmail.com" target="_blank">zukerfuck@gmail.com</a>
-      </li>
-      <li>
+        |
         <a href="stupiedapes@gmail.com" target="_blank"
           >stupiedapes@gmail.com</a
         >
-      </li>
-    </ul>
-    <hr />
-    <h2>My hobbies:</h2>
-    <ol>
-      <li>To Look through the window</li>
-      <li>To sleep twelve hours</li>
-    </ol>
+        </div>
+      </div>
 
-    <h2>Work Experience:</h2>
-    <table border="2">
-      <tr>
-        <th>Company</th>
-        <th>Position</th>
-        <th>Years</th>
-      </tr>
-      <tr>
-        <td>Palms and Monkeys ltd.</td>
-        <td>Employee with hole in pockets</td>
-        <td>1998-2001</td>
-      </tr>
-      <tr>
-        <td>Always Fresh inc.</td>
-        <td>Funny character in elephant costume</td>
-        <td>2001-2003</td>
-      </tr>
-    </table>
+      <div class="card bg-yellow">
+        <h2>My hobbies:</h2>
+        <ol class="list">
+          <li>To Look through the window</li>
+          <li>To sleep twelve hours</li>
+        </ol>
+      </div>
 
-    <h2>Dance like this and fuck the World:</h2>
-    <li><a href="youtube.html" target="_blank">Dance teacher</a></li>
-    <hr />
-    <h2>Contact with me:</h2>
-    <form action="/">
-      <label for="name">What's your name:</label>
-      <input type="text" id="name" placeholder="I don`t give a damn..." />
+      <div class="card bg-green">
+        <h2>Work Experience:</h2>
+        <table class="table">
+          <tr>
+            <td>Palms and Monkeys ltd.</td>
+            <td>Employee with hole in pockets</td>
+            <td>1998-2001</td>
+          </tr>
+          <tr>
+            <td>Always Fresh inc.</td>
+            <td>Funny character in elephant costume</td>
+            <td>2001-2003</td>
+          </tr>
+        </table>
+      </div>
 
-      <label for="email">email:</label>
-      <input type="email" id="email" placeholder="I don`t give a fuck..." />
+      <div class="card bg-red">
+        <h2>Dance like this and fuck the World:</h2>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=ZkNMZlkrzaU"
+              target="_blank"
+              >Dance teacher</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=Hse2AS1A14o"
+              target="_blank"
+              >Dance Teacher's New Garden Dance</a
+            >
+          </li>
+        </ul>
+      </div>
 
-      <br />
+      <div class="contact">
+      <h2>Contact with me:</h2>
+      <form action="/">
+      <div class="row"> 
+      <div class="form-group">                               
+        <label for="name">What's your name:</label>
+        <input type="text" id="name" placeholder="I don`t give a damn..." />
+      </div>
+      <div class="form-group">
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="I don`t give a fuck..." />
+      </div>
+      </div>
+      <div class="form-group">
+        <label for="text">Say something:</label>
+        <textarea id="text" cols="43" rows="1"></textarea>
+      </div>
 
-      <label for="text">Say something:</label>
-      <textarea id="text" cols="43" rows="1"></textarea>
+        <input class="btn" type="submit" value="send to hell" />
+      </form>
+    </div>
 
-      <input type="submit" value="send to hell" />
-    </form>
+    <div class="position">
+      <div class="box"></div>
+    </div>
+
+    <div style="margin-bottom: 40px"></div>
   </body>
 </html>
